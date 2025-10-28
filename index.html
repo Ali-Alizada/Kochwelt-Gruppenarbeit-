@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./scripts/script.js"></script>
+  <!-- <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+  <title>Kochwelt</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt" /></a>
+      <nav id="menu-normal">
+        <a id="active-page" href="./index.html">Start</a>
+        <a href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+      <img id="burger-icon" onclick="toggleRespMenu()" src="./img/icons/menu_icon.svg" alt="menu">
+      <nav id="resp-menu" class="menu-mobile menu-mobile-closed">
+        <a href="./index.html">Start</a>
+        <a href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="recipe-of-the-day">
+      <img class="main-pic" src="./img/gulasch.jpg" alt="Gulasch">
+      <div class="right-side">
+        <h2>Gulasch Oma´s Art</h2>
+        Genieße Gulasch nach Omas Art: Zartes Fleisch, langsam geschmort in einer würzigen Soße
+        aus Zwiebeln und Paprika – ein klassisches, herzhaftes Gericht, das mit Liebe zubereitet
+        wird und an gemütliche Familienessen erinnert.
+        <a class="button" href="./recipe_des_tag.html">Rezept öffnen</a>
+      </div>
+    </div>
+    <div class="gray-banner">
+      <div class="try-something-new">
+        <h2>Lust auf was Neues?</h2>
+        <div class="suggestions">
+            <a class="single_menu" href="./recipe_Marc.html"><img class="img-suggestion" src="./img/kaesespaetzle.jpg">Käsespätzle</a>
+            <a class="single_menu" href="./recipe_Aliaqa.html"><img class="img-suggestion" src="img/3.jpg">Bandnudeln mit Knoblauch</a>
+            <a class="single_menu" href="./recipe_Leon.html"><img class="img-suggestion" src="./img/zuercher-geschnetzeltes.jpg">Züricher geschnetzeltes</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="whats-better">
+      <h2>Gasherd vs. Induktionsherd - Was ist besser?</h2>
+      <div class="comparison">
+      <span>
+        Der Gasherd bietet sofortige Wärme und präzise Temperaturkontrolle, ideal für flexibles Kochen.
+        Er ist unabhängig von Strom, aber weniger energieeffizient und benötigt mehr Zeit zum Erhitzen.
+        Zudem ist die Reinigung aufgrund von Fett und Essensresten aufwändiger.
+        <br>
+        Der Induktionsherd ist energieeffizient,
+        kocht schneller und bietet präzise Temperaturregelung. Er ist sicherer und leichter zu reinigen,
+        erfordert jedoch spezielles Kochgeschirr und ist teurer in der Anschaffung.
+        <br>
+        Zusammengefasst: Der Gasherd eignet sich für Flexibilität und direkte Temperaturkontrolle, während der Induktionsherd schneller, sicherer und energieeffizienter ist, aber höhere Anschaffungskosten mit sich bringt.
+      </span>
+      <img class="img-comparison" src="./img/gasherd.jpg" alt="Gasherd">
+    </div>
+
+    </div>
+
+  </main>
+  <footer>
+    <div id="footer-box">
+      <a href="./index.html"><img id="logo-small-white" src="./img/logo_small-white.png" alt="logo small">
+      <img id="logo-white" src="./img/logo-white.png" alt="logo"></a>
+      <div id="footer-icon-box">
+        <a href="http://www.facebook.com"><img src="./img/icons/facebook_logo.svg" alt="facebook"></a>
+        <a href="http://www.instagram.com"><img src="./img/icons/instagram_logo.svg" alt="instagram"></a>
+        <a href="http://www.tripadvisor.com"><img src="./img/icons/tripadvisor_logo.svg" alt="tripadvisor"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

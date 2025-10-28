@@ -1,0 +1,180 @@
+body {
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    flex: 1;
+}
+
+.recipe-of-the-day {
+    display: flex;
+    width: 1440px;
+    padding-bottom: 50px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button {
+    display: flex;
+    background-color: green;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 150px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.button:hover {
+    background-color: rgb(0, 170, 0);
+    cursor: pointer;
+}
+
+.main-pic {
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.gray-banner {
+    display: flex;
+    background-color: #efefef;
+    justify-content: center;
+}
+ 
+.try-something-new {
+    display: flex;
+    width: 1440px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.suggestions {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    padding-bottom: 40px;
+}
+
+.single_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.img-suggestion {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+
+.single_menu img:hover{
+    filter: brightness(1.1);
+}
+
+.img-comparison {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.whats-better {
+    width: 1440px;
+}
+
+.whats-better h2 {
+    text-align: center;
+}
+
+.comparison {
+    display: flex;
+    width: 1440px;
+}
+
+.comparison span {
+    padding-right: 24px;
+}
+
+@media (min-width: 1550px) {
+    .gray-banner {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 1550px) {
+    main, .recipe-of-the-day, .whats-better, .try-something-new, .suggestions, .comparison {
+        width: 92.5vw;
+    }
+    .gray-banner {
+        margin: 0 !important;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 840px) {
+    .button {
+        margin-top: 16px;
+    }
+
+    .recipe-of-the-day {
+        flex-direction: column;
+    }
+
+    .main-pic {
+        margin-right: 0;}
+
+    .suggestions {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .suggestions img {
+        width: 92.5vw;
+    }
+
+    .comparison {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .img-comparison {
+        width: 92.5vw;
+    }    
+}
+
+@media (max-width: 555px) {
+   .whats-better h2 {
+    text-align: start;
+   } 
+}
+
+@media (max-width: 360px) {
+    .whats-better h2 {
+        font-size: 20px;
+    
+       } 
+}

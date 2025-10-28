@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;   
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.form-row {
+    max-width: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.form-row input {
+    width: 280px;
+    margin: 0 8px;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 24px;
+    background-color: #e4e4e4;
+    text-align: center;
+    border: none;
+    outline-color: green;
+}
+
+.form-row textarea {
+    width: 624px;
+    height: 200px;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 24px;
+    resize: vertical;
+    background-color: #e4e4e4;
+    border: none;
+    margin: 0 8px;
+    outline-color: green;
+}
+
+.form-row button {
+    height: 40px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 16px;
+
+}
+
+.form-row button:hover {
+
+    background-color: rgb(0, 170, 0);
+    cursor: pointer;
+
+}
+
+.back-to-home {
+    display: flex;
+    justify-content: center;
+}
+
+.back-to-home-btn {
+    padding: 16px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 24px;
+}
+
+.back-to-home-btn:hover {
+    background-color: rgb(0, 170, 0);
+    cursor: pointer;
+}
+
+
+
+
+/* Contact */
+@media(max-width: 760px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input {
+        margin: 8px;
+    }
+
+    .form-row textarea {
+        width: 280px;
+    }
+
+    .form-row input {
+        width: 280px;
+    }
+
+    h1 {
+        padding: 0 36px;
+    }
+
+
+
+}
+
+@media(max-width: 400px) {
+    .form-row textarea {
+        width: 200px;
+
+    }
+
+    .form-row input {
+        width: 200px;
+    }
+
+
+
+}

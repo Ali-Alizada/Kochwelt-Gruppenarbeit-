@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/contact.css">
+  <!-- <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" /> -->
+   <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/contact.js"></script>
+  <title>Kontakt</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="index.html"><img src="./img/logo.png" alt="Kochwelt" /></a>
+      <nav id="menu-normal">
+        <a href="./index.html">Start</a>
+        <a href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a id="active-page" href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+      <img id="burger-icon" onclick="toggleRespMenu()" src="./img/icons/menu_icon.svg" alt="menu">
+
+      <nav id="resp-menu" class="menu-mobile menu-mobile-closed">
+        <a onclick="toggleRespMenu()" href="./index.html">Start</a>
+        <a onclick="toggleRespMenu()" href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a onclick="toggleRespMenu()" href="./contact.html">Kontakt</a>
+        <a onclick="toggleRespMenu()" href="./impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+  <h1>Kontaktieren Sie Uns</h1>
+  <div class="form-container">
+    <form onsubmit="sendMail(event)">
+      <div class="form-row">
+        <input type="text" name="firstname" placeholder="Vorname" required>
+        <input type="text" name="lastname" placeholder="Nachname" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" pattern="[\+]?[0-9]+" name="tel" placeholder="Tel: 0123 4567 890" required>
+        <input type="email" name="email" placeholder="max.muster@email.de" required>
+      </div>
+      <div class="form-row">
+        <textarea name="message" id="" placeholder="Nachricht" required></textarea>
+      </div>
+      <div class="form-row">
+        <button>Senden</button>
+      </div>
+    </form>
+  </div>
+
+  <!--footer-->
+  <footer>
+    <footer>
+      <div id="footer-box">
+        <a href="./index.html"><img id="logo-small-white" src="./img/logo_small-white.png" alt="logo small">
+          <img id="logo-white" src="./img/logo-white.png" alt="logo"></a>
+        <div id="footer-icon-box">
+          <a href="http://www.facebook.com"><img src="./img/icons/facebook_logo.svg" alt="facebook"></a>
+          <a href="http://www.instagram.com"><img src="./img/icons/instagram_logo.svg" alt="instagram"></a>
+          <a href="http://www.tripadvisor.com"><img src="./img/icons/tripadvisor_logo.svg" alt="tripadvisor"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

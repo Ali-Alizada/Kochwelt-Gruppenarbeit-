@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/recipe.css">
+  <!-- <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" /> -->
+   <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/recipe_des_tag.js"></script>
+  <title>Rezepgt des Tages</title>
+</head>
+
+<body onload="calculate()">
+  <header>
+    <div>
+      <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt" /></a>
+      <nav id="menu-normal">
+        <a href="./index.html">Start</a>
+        <a id="active-page" href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+      <img id="burger-icon" onclick="toggleRespMenu()" src="./img/icons/menu_icon.svg" alt="menu">
+      <nav id="resp-menu" class="menu-mobile menu-mobile-closed">
+        <a href="./index.html">Start</a>
+        <a href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Gulasch Oma´s Art</h1>
+    <img class="img-box" src="./img/gulasch.jpg" alt="gulasch">
+    <div class="icons-box">
+      <div>
+        <img src="./img/icons/clock-regular.svg" alt="">2 2/3 Std.
+      </div>
+      <div>
+        <img src="./img/icons/brain-solid.svg" alt="">mittel
+      </div>
+      <div>
+        <img src="./img/icons/calendar-alt-regular.svg" alt="">03.09.2025
+      </div>
+    </div>
+    <div id="separator"></div>
+
+    <!-- Portions -->
+    <div class="portions">
+      <label for="input">Zutaten für </label>
+      <input onchange="calculate()" type="number" id="input" min="1" max="20" value="4" required>
+      <button onclick="calculate()">Portionen</button>
+    </div>
+
+    <!-- Ingredients -->
+    <div id="content">
+
+    </div>
+
+    <!-- Preparation -->
+    <h2>Zubereitung</h2>
+    <div class="icons-box">
+      <div><img src="./img/icons/clock-regular.svg" alt="clock">ca. 30 Min.</div>
+      <div><img src="./img/icons/clock-regular.svg" alt="clock">Gesamtzeit ca. 2 2/3 Std.</div>
+    </div>
+    <div class="preparation">
+      <span>Die Zwiebeln, Karotte und Sellerie in kleine Würfel schneiden.
+        Alles mit Butterschmalz kräftig anbraten. Tomatenmark zugeben und andünsten. Mit dem Rotwein und der Brühe
+        ablöschen und zum Kochen bringen. Jetzt erst das gewürfelte Fleisch dazu geben, wieder aufkochen und bei kleiner
+        Hitze mit den Lorbeerblättern ca. 2 Stunden köcheln lassen.
+        <p>
+          Dazu schmecken Knödel und Blaukraut.
+        </p>
+      </span>
+    </div>
+    <h3>Rezept erstellt von </h3>
+    <div class="author">
+      <img src="./img/profile.png" alt="Leon Holmhey">
+      <h4>Leon Holmhey</h4>
+    </div>
+  </main>
+  
+  <footer>
+    <div id="footer-box">
+      <a href="./index.html"><img id="logo-small-white" src="./img/logo_small-white.png" alt="logo small">
+      <img id="logo-white" src="./img/logo-white.png" alt="logo"></a>
+      <div id="footer-icon-box">
+        <a href="http://www.facebook.com"><img src="./img/icons/facebook_logo.svg" alt="facebook"></a>
+        <a href="http://www.instagram.com"><img src="./img/icons/instagram_logo.svg" alt="instagram"></a>
+        <a href="http://www.tripadvisor.com"><img src="./img/icons/tripadvisor_logo.svg" alt="tripadvisor"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

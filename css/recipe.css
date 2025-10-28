@@ -1,0 +1,138 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  margin: 50px auto;
+}
+
+.img-box {
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.icons-box {
+  display: flex;
+  height: 30px;
+  gap: 15px;
+}
+
+.icons-box div {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.icons-box img {
+  height: 15px;
+  width: 15px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+#separator {
+  margin-top: 50px;
+  border: 1px solid #f0f0f0;
+}
+
+.portions {
+  margin-top: 10px;
+}
+
+.portions button {
+  background-color: green;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 150px;
+}
+
+.portions button:hover {
+  background-color: rgb(0, 170, 0);
+  cursor: pointer;
+}
+
+.portions input {
+  height: 32px;
+  width: 120px;
+  margin-left: 5px;
+  margin-right: -5px;
+  text-align: center;
+  outline-color: green;
+}
+
+.ingredients {
+  width: 100%;
+  margin-top: 10px;
+}
+
+ul {
+  display: block;
+  padding-left: 0;
+}
+
+.bg_gray {
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+li {
+  padding: 15px 25px;
+  list-style-type: none;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #a4a4a4;
+}
+
+.preparation {
+  margin-top: 30px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  height: 80px;
+  border-radius: 50%;
+  padding-right: 30px;
+}
+
+@media (max-width: 1550px) {
+  main {
+    width: 92.5vw;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .icons-box {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+  }
+
+  #input {
+    width: 20vw;
+  }
+
+  .portions button {
+    width: 30vw;
+  }
+}

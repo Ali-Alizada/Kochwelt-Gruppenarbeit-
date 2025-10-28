@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/recipe.css" />
+  <!-- <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" /> -->
+   <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/recipe_Aliaqa.js"></script>
+  <title>Nudelsuppe mit Garnelen</title>
+</head>
+
+<body onload="calculate()">
+  <header>
+    <div>
+      <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt" /></a>
+      <nav id="menu-normal">
+        <a href="./index.html">Start</a>
+        <a id="active-page" href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+      <img id="burger-icon" onclick="toggleRespMenu()" src="./img/icons/menu_icon.svg" alt="menu">
+      <nav id="resp-menu" class="menu-mobile menu-mobile-closed">
+        <a href="./index.html">Start</a>
+        <a href="./recipe_des_tag.html">Rezept des Tages</a>
+        <a href="./contact.html">Kontakt</a>
+        <a href="./impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Bandnudeln mit Knoblauch, Olivenöl, Chili und Parmesan</h1>
+    <img class="img-box" src="img/3.jpg" alt="Nudelsuppe mit Garnelen">
+    <div class="icons-box">
+      <div>
+        <img src="./img/icons/clock-regular.svg" alt="">30 min.
+      </div>
+      <div>
+        <img src="./img/icons/brain-solid.svg" alt="">simpel
+      </div>
+      <div>
+        <img src="./img/icons/calendar-alt-regular.svg" alt="">29.08.2025
+      </div>
+    </div>
+    <div id="separator"></div>
+
+    <!-- Portions -->
+    <div class="portions">
+      <label for="input">Zutaten für </label>
+      <input onchange="calculate()" type="number" id="input" min="1" max="20" value="4" required>
+      <button onclick="calculate()">Portionen</button>
+    </div>
+
+    <!-- Ingredients -->
+    <div id="content">
+
+    </div>
+
+    <!-- Preparation -->
+    <h2>Zubereitung</h2>
+    <div class="icons-box">
+      <div><img src="./img/icons/clock-regular.svg" alt="clock">ca. 30 min.</div>
+      <div><img src="./img/icons/clock-regular.svg" alt="clock">Gesamtzeit 45 min.</div>
+    </div>
+    <div class="preparation">
+      <span>Dieses Gericht, Tagliatelle mit Knoblauch, Öl, Chili und Parmesan, ist ein echter Klassiker der italienischen Küche. Es vereint Schlichtheit und Raffinesse auf perfekte Weise. Die Basis bilden breite Bandnudeln, die in sprudelndem Salzwasser al dente gekocht werden und so ihre ideale Bissfestigkeit behalten.<br><br> Nach dem Abgießen werden sie in hochwertigem Olivenöl geschwenkt, das durch fein geschnittenen Knoblauch ein intensives Aroma erhält. Frische rote Chilischoten verleihen der Pasta eine angenehme, feurige Schärfe, die den Gaumen belebt und dem Gericht eine besondere Note gibt. <br><br> Die Petersilienblätter sorgen für eine frische, grüne Komponente, die den kräftigen Geschmack harmonisch abrundet. Zum Schluss wird alles mit frisch geriebenem Parmesan bestreut, der eine cremig-würzige Textur hinzufügt und die Aromen miteinander verbindet.
+        <br>
+        <h3>Tipps zum Rezept</h3>
+       Für ein optimales Ergebnis sollte das Olivenöl nur leicht erhitzt werden, damit der Knoblauch nicht verbrennt und bitter wird. Wer es etwas milder mag, entfernt vor dem Anbraten die Kerne aus der Chili. Besonders fein wird das Gericht, wenn der Parmesan frisch vom Stück gerieben wird.
+      </span>
+    </div>
+    <h3>Rezept erstellt von </h3>
+    <div class="author">
+      <img src="img/Alizada-Profile.jpg" alt="Aliaqa Alizada">
+      <h4>Aliaqa Alizada</h4>
+    </div>
+  </main>
+
+
+  <footer>
+    <div id="footer-box">
+      <a href="./index.html"><img id="logo-small-white" src="./img/logo_small-white.png" alt="logo small">
+      <img id="logo-white" src="./img/logo-white.png" alt="logo"></a>
+      <div id="footer-icon-box">
+        <a href="http://www.facebook.com"><img src="./img/icons/facebook_logo.svg" alt="facebook"></a>
+        <a href="http://www.instagram.com"><img src="./img/icons/instagram_logo.svg" alt="instagram"></a>
+        <a href="http://www.tripadvisor.com"><img src="./img/icons/tripadvisor_logo.svg" alt="tripadvisor"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
