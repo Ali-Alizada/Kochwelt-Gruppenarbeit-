@@ -17,10 +17,10 @@ function sendMail(event){
             window.location.href = "./send_mail.html";
             event.target.reset();
         } else {
-            alert("❌ Fehler beim Senden, bitte erneut versuchen.");
+            alert("Fehler beim Senden, bitte erneut versuchen.");
         }
     }).catch((error) => {
         console.error(error);
-        alert("⚠️ Netzwerkfehler – keine Verbindung möglich.");
+        alert("Netzwerkfehler – keine Verbindung möglich.");
     });
 }
